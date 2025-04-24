@@ -1,0 +1,505 @@
+@media screen and (max-width: 768px) {
+  /* Right Section: Sidebar Menu (Responsive) */
+
+
+  #header-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:100vh;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    /* margin-top: 62px; */
+    padding-top: 100px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 15px #333;
+    transition: left 0.3s ease;
+  }
+
+  /* Menu Icon for opening the menu */
+  #menu-icon {
+    display: block !important;
+    color: white;
+    padding-right: 30px;
+  }
+
+  /* Close button styling */
+  #close-btn {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 7px;
+    /* right: 20px; */
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+  }
+
+  /* Active class for opening the menu */
+  #header-right.active {
+    left: 50%;
+  }
+
+  /* Styling for list items in the sidebar */
+  #header-right .header-links {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid #333; */
+    transition: background-color 0.5ms ease;
+    /* padding: 0 60px; */
+  }
+
+  .header-links a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    gap: 1rem;
+    padding-left: 100px;
+    &:active {
+      color: white !important;
+    }
+  }
+
+  #header-right .header-links:hover {
+    background-color: aqua;
+  }
+  
+
+ 
+
+  .fa-house,
+  .fa-address-book,
+  .fa-user-graduate,
+  .fa-universal-access,
+  .fa-laptop,
+  .fa-bag-shopping,
+  .fa-address-card {
+    display: inline-block !important;
+    font-size: 15px;
+  }
+
+ 
+/* home css open */
+
+  .home{
+    flex-direction: column-reverse;
+    justify-content: start;
+padding-top: 100px;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 30px;
+width: 100%;
+/* border: 5px solid green; */
+height: 93vh;
+gap: 5rem;
+  }
+
+  .image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px aqua, -4px -4px 20px aqua;
+  }
+  .home-left{
+    padding: 20px;
+  }
+  #details{
+    font-size: 15px;
+  }
+  .type{
+    margin: 20px 0;
+  
+  }
+
+  #icons{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  /* border: 2px solid red; */
+  height: 100px;
+  margin: 0;
+  padding-bottom: 10px;
+  }
+
+
+  /* home styling close */
+
+
+
+
+    /* about styling open */
+  
+  
+
+    /* about styling open */
+  
+    .about-head{
+      color: white;
+  width: 100%;
+  height: 150px;
+  padding-left: 40%;
+  padding-top:100px ;
+
+
+    }
+    .about{
+      width: 100%;
+      height: auto;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      padding:10px 50px;
+margin: 0;      
+      gap: 1rem;
+        }
+       
+  #about-image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid aqua;
+    box-shadow: 2px 2px 10px aqua,-2px -2px 10px aqua;
+    &:hover{
+      box-shadow: 2px 2px 30px aqua,-2px -2px 30px aqua;
+    }
+      }
+
+
+
+/* education css open  */
+#education{
+
+  padding-left: 35%;
+
+}
+  
+.education{
+ 
+  padding: 60px 0;
+  padding-left: 0;
+  height: auto;
+}
+
+   .timeline-line{
+     
+      justify-content:start;
+      align-items: start;
+border-radius: 5px;
+
+   }  
+   .timeline-container{
+      position: relative;
+   }
+ 
+
+   .content{
+    padding: 15px 15px;
+   }
+   
+
+   .timeline-item:nth-child(even){
+       right: 0;
+   }
+
+   .timeline-item:nth-child(odd){
+    
+  left: 0;
+   }
+
+   .timeline-item:nth-child(odd)::before{
+     
+      right: 99%;
+      bottom: 105%;
+    }
+ 
+   .timeline-item:nth-child(even)::before{
+   
+      left: -4%;
+      /* right: -100%; */
+      bottom: 105%;
+    }
+    /*  education css close */
+
+
+
+    /* skill section open */
+
+
+
+/* skill css open */
+
+#skill {
+  color: white;
+  width: 100%;
+  height: 150px;
+  /* border: 2px solid deepskyblue; */
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  padding-left: 40%;
+  padding-top: 90px;
+}
+
+
+.skills {
+  height: auto;
+
+  flex-direction: column;
+  /* color: white; */
+}
+
+/* technical skills open */
+
+.technical {
+  height: 100%;
+  width: 100%;
+
+}
+
+/* professional skill  */
+.professional {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.professional-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+/* professional css close */
+/* skill section close */
+
+
+
+
+
+/* service css open */
+
+.service-head{
+  color: white;
+  width: 100%;
+  height: 150px;
+  text-transform: capitalize;
+  padding-left: 40%;
+  padding-top: 90px;
+}
+
+.service-head span{
+  color: aqua;
+}
+
+.services{
+  height: auto;
+
+  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+padding: 10% 0%;
+row-gap: 4rem;
+}
+
+.service-card{
+
+  height: 380px;
+  width: 300px;
+  box-shadow: 0px 0px 20px aqua;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ padding: 25px;
+background-color: black;
+cursor: pointer;
+     border-radius: 15px;
+
+}
+.service-card:hover {
+  transform: scale(1.07); 
+  box-shadow: 0px 0px 30px red;
+}
+
+.service-card h3 {
+  font-size: 25px;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ text-shadow: 0 0 2px aqua;
+
+}
+
+.service-card p {
+  color:white;
+  font-size: 17px;
+  width: 100%;
+ 
+}
+
+.service-card #images{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.service-card img{
+margin: 0 30%;
+ height: 100px;
+
+}
+
+
+/* service css close */
+
+
+
+/* project css open */
+
+.project-head{
+  color: white;
+  width: 100%;
+  height: 150px;
+  text-transform: capitalize;
+  padding-left: 40%;
+  padding-top: 90px;
+}
+.project-head span{
+  color: aqua;
+}
+
+.project-container{
+  height: auto;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(1,1fr);
+  place-items: start;
+
+padding-left: 25%;
+}
+
+#project-head{
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.project-card #project-buttons{
+  width: 100%;
+margin-top: 15px;
+  /* border: 2px solid red; */
+padding: 0 5px;
+}
+
+
+/* project css close */
+
+
+
+
+/* contact section open  */
+.contact-heading{
+  color: white;
+  width: 100%;
+  height: 150px;
+  text-transform: capitalize;
+  padding-left: 40%;
+  padding-top: 90px;
+}
+.contact-heading span{
+  color: aqua;
+}
+.contact-me{
+height: auto;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: start;
+padding:20% 5%;
+
+}
+.contact{
+  
+  height: auto;
+  width: 400px;
+  border: 3px solid aqua;
+
+  box-shadow: 0px 0px 20px aqua;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px 30px;
+  animation: fadeIn 3s ease-in-out;
+transition: transform 4s;
+&:hover{
+  transform: translateY(-25px) scale(1.05);
+}
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20%); /* Thoda upar se aaye */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+/* footer css open */
+.footer{
+  padding-top: 50px;
+  height: 20vh;
+  background: rgb(10, 10, 10);
+
+}
+.footer-links{
+ font-size:12px;
+  display: flex;
+  justify-content: center;
+padding-top: 20px;
+  gap: 2rem;
+}
+
+#copy-right{
+  font-size:12px;
+  padding-top: 20px;
+}
+/* footer css close */
+
+
+
+/* tggle mode */
+
+#toggle-mode{
+  position: absolute;
+  bottom: 96%;left: 50%;
+  font-size: 25px;
+  z-index: 300;
+
+}
+
+
+}
+

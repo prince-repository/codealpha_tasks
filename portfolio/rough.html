@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+            background-color:aliceblue;
+            background: linear-gradient(180deg,burlywood 100%,white 0%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .professional {
+            width: 50%;
+            text-align: center;
+        }
+        
+        .professional-head h1 {
+            
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        
+        .professional-skill {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            justify-items: center;
+        }
+        
+        .progress-circle {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        svg {
+            transform: rotate(-90deg);
+            position: absolute;
+        }
+        
+        circle {
+            fill: none;
+            stroke-linecap: round;
+            cx: 70px;
+            cy: 70px;
+            r: 50px;
+        }
+        
+        .circle-background {
+            stroke: #333;
+            stroke-width: 10;
+        }
+        
+        .circle-progress {
+            stroke: aqua;
+            stroke-width: 10;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: stroke-dashoffset 0.6s ease-in-out;
+        }
+        
+        .percentage {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .skill-name {
+            margin-top: 160px;
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="professional">
+        <div class="professional-head"><h1>Professional Skills</h1></div>
+        <div class="professional-skill">
+            <div class="progress-circle" data-percent="90">
+                <svg height="140px" width="140px">
+                    <circle class="circle-background"></circle>
+                    <circle class="circle-progress"></circle>
+                </svg>
+                <span class="percentage"></span>
+                <span class="skill-name">Creativity</span>
+            </div>
+            <div class="progress-circle" data-percent="60">
+                <svg height="140px" width="140px">
+                    <circle class="circle-background"></circle>
+                    <circle class="circle-progress"></circle>
+                </svg>
+                <span class="percentage"></span>
+                <span class="skill-name">Communication</span>
+            </div>
+            <div class="progress-circle" data-percent="45">
+                <svg height="140px" width="140px">
+                    <circle class="circle-background"></circle>
+                    <circle class="circle-progress"></circle>
+                </svg>
+                <span class="percentage"></span>
+                <span class="skill-name">Problem Solving</span>
+            </div>
+            <div class="progress-circle" data-percent="78">
+                <svg height="140px" width="140px">
+                    <circle class="circle-background"></circle>
+                    <circle class="circle-progress"></circle>
+                </svg>
+                <span class="percentage"></span>
+                <span class="skill-name">Teamwork</span>
+            </div>
+        </div>
+    </div>
+    <script>
+      
+// circular progress bar
+const circularProgress = document.querySelectorAll(".progress-circle");
+
+setInterval(() => {
+  circularProgress.forEach((element) => {
+    const per = element.getAttribute("data-percent");
+
+    let progressCircle = element.querySelector(".circle-progress");
+    let percentText = element.querySelector(".percentage"); // Correct selection for each progress-circle
+
+    if (progressCircle && percentText) {
+      progressCircle.style.strokeDasharray = 314;
+
+      //  Reset strokeDashoffset
+      progressCircle.style.strokeDashoffset = 314;
+
+      //  Animate strokeDashoffset
+      setTimeout(() => {
+        progressCircle.style.strokeDashoffset = 314 - (314 * per) / 100;
+      }, 600);
+
+      // ✅ Reset counter
+      let count = 0;
+
+      // Stop any previous counter
+      clearInterval(element.counterInterval);
+
+      // Start new counter animation
+      element.counterInterval = setInterval(() => {
+        if (count <= per) {
+          percentText.innerText = count + "%"; // ✅ Correct update for each element
+          count++;
+        } else {
+          clearInterval(element.counterInterval);
+        }
+      }, 10);
+    }
+  });
+}, 3000);
+
+
+
+
+
+    </script>
+</body>
+</html>

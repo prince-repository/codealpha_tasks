@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Weather App",
+    "description": "A weather forecasting web app built with HTML, CSS, and JavaScript. Fetches real-time weather data using an API.",
+    "image": "weather.png",
+    "liveLink": "https://prince-repository.github.io/WEATHER-APP/",
+    "repoLink": "https://github.com/prince-repository/WEATHER-APP",
+    "comingSoon": false,
+    "progress":100
+  },
+  {
+    "id": 2,
+    "name": "Smart Calculator",
+    "description": "An advanced calculator with arithmetic operations, trigonometric functions, dark mode, and error handling.",
+    "image": "calculator.png",
+    "liveLink": "https://prince-repository.github.io/SmartCalculator/",
+    "repoLink": "https://github.com/prince-repository/SmartCalculator",
+    "comingSoon": false,
+    "progress":100
+  },
+  {
+    "id": 3,
+    "name": "Tic-Tac-Toe",
+    "description": "A simple Tic-Tac-Toe game with a responsive UI and player vs. player mode.",
+    "image": "tic-tac-toe.png",
+    "liveLink": "https://prince-repository.github.io/TIC-TAC-TOE/",
+    "repoLink": "https://github.com/prince-repository/TIC-TAC-TOE",
+    "comingSoon": false,
+    "progress":100
+  },
+  {
+    "id": 4,
+    "name": "Coming Soon",
+    "description": "New exciting projects are on the way. Stay tuned!",
+    "image": "coming.png",
+    "liveLink": "#",
+    "repoLink": "#",
+    "comingSoon": true,
+    "progress":100
+  }
+]

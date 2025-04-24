@@ -1,0 +1,611 @@
+/* mobile (<= 480px ) */
+
+
+@media screen and (max-width: 480px) {
+  /* Right Section: Sidebar Menu (Responsive) */
+#logo{
+  font-size: 15px;
+  border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+#name{
+  font-size: 15px;
+}
+
+  #header-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    padding-top: 100px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 15px #333;
+    transition: left 0.3s ease; 
+  }
+
+  /* Menu Icon for opening the menu */
+  #menu-icon {
+    display: block !important;
+    color: white;
+    font-size: 15px;
+  }
+
+  /* Close button styling */
+  #close-btn {
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    top: 25px;
+    /* right: 20px; */
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    width: 100%;
+    height: 40px;
+  }
+
+  /* Active class for opening the menu */
+  #header-right.active {
+    left: 60%;
+  }
+
+  /* Styling for list items in the sidebar */
+  #header-right .header-links {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 15px;
+    transition: background-color 0.5ms ease;
+    padding: 0 0;
+  }
+
+  .header-links a{
+   
+    display: flex;
+    justify-content:start;
+    align-items:center;
+  width: 100%;
+  gap: 1rem;
+  padding-left: 25px;
+  &:active{
+    color: white !important;
+   
+  }
+  }
+
+
+ 
+  #header-right .header-links:hover {
+    background-color: aqua;
+  }
+
+
+
+
+
+
+.fa-house,
+.bi-file-person,
+.fa-address-book,
+.fa-universal-access,
+.fa-laptop,
+.fa-bag-shopping,
+.fa-address-card{
+  display:inline-block !important;  
+font-size: 10px;
+}
+
+.home{
+  flex-direction: column-reverse;
+  justify-content: start;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+height: auto;
+gap: 1rem;
+}
+
+.image img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 20px aqua, -4px -4px 20px aqua;
+}
+.home-left{
+  padding: 10px;
+}
+#details{
+  font-size: 15px;
+}
+.type{
+  margin: 15px 0;
+
+}
+#text{
+  font-size: 17px;
+}
+
+#icons{
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 1rem;
+height: 100px;
+margin: 0;
+padding-bottom: 10px;
+}
+
+
+#cv{
+  background-color: aqua;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 100px;
+  border-radius: 45px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: white;
+transition: height,width,box-shadow 0.4s,0.4s,0.4s ease-in;
+box-shadow: 2px 2px 10px aqua ,-2px -2px 10px aqua;
+
+&:hover{
+  height: 37px;
+width: 103px;
+box-shadow: 2px 2px 15px aqua ,-2px -2px 15px aqua;
+}
+&:active{
+  color: black;
+}
+}
+
+
+
+    /* about styling open */
+  
+    .about-head{
+      color: white;
+  width: 100%;
+  height: 120px;
+  /* border: 2px solid blueviolet; */
+  padding-left: 35%;
+  /* margin: 0 auto; */
+  padding-top:70px ;
+font-size: 25px;
+
+    }
+    .about{
+     
+      gap:0;
+        }
+       
+  #about-image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid aqua;
+    box-shadow: 2px 2px 10px aqua,-2px -2px 10px aqua;
+    &:hover{
+      box-shadow: 2px 2px 30px aqua,-2px -2px 30px aqua;
+    }
+      }
+#about-details{
+  font-size: 15px;
+}
+
+
+
+
+/* education css open  */
+#education{
+  color:aqua;
+  width: 100%;
+  height: 150px;
+  /* border: 2px solid deepskyblue; */
+  padding-left: 30%;
+  padding-top:90px ;
+  text-transform: capitalize;
+}
+  
+.education{
+
+  padding: 20px 0;
+  padding-left: 0;
+  height: auto;
+}
+
+   .timeline-line{
+       min-height: 450px;
+    
+
+   }  
+   .timeline-container{
+      position: relative;
+   }
+   .timeline-item{
+      min-height: 80px;
+      width: 19rem;
+      border: 2px solid aqua;
+      border-radius: 30px;
+      position: relative; 
+    
+      }
+     
+
+ 
+   
+
+   .timeline-item:nth-child(even){
+       right: 0;
+   }
+
+   .timeline-item:nth-child(odd){
+    
+  left: 0;
+   }
+
+   .timeline-item:nth-child(odd)::before{
+     
+      right: 99%;
+      bottom: 105%;
+    }
+ 
+   .timeline-item:nth-child(even)::before{
+     
+      left: -4%;
+      /* right: -100%; */
+      bottom: 105%;
+    }
+
+    .content{
+      padding: 15px 15px;
+      font-size: 15px;
+     }
+
+  /* education css close  */
+
+
+
+
+/* skill section open */
+  
+
+
+
+
+/* skill css open */
+ 
+#skill {
+  color: white;
+  width: 100%;
+  height: 100px;
+  /* border: 2px solid deepskyblue; */
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  padding-left: 35%;
+  padding-top: 60px;
+  font-size: 30px;
+}
+#skill span {
+  color: aqua;
+} 
+
+.skills {
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  /* color: white; */
+}
+
+/* technical skills open */
+
+.technical {
+  height: 100%;
+  width: 100%;
+}
+
+.technical-head {
+ 
+  font-size: 10px;
+}
+
+.progress-bar {
+  height: 7px;
+ 
+}
+
+
+
+
+
+/* professional skill  */
+.professional {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid deeppink; */
+}
+
+.professional-head {
+ 
+  font-size: 10px;
+}
+
+.professional-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+
+/* professional css close */
+/* skill section close */
+
+.service-head{
+  color: white;
+  width: 100%;
+  height: 150px;
+  /* border: 2px solid deepskyblue; */
+  text-transform: capitalize;
+  padding-left: 30%;
+  padding-top: 90px;
+}
+
+.service-head span{
+  color: aqua;
+}
+
+.services{
+  height: auto;
+
+  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+padding: 10% 0%;
+row-gap: 4rem;
+}
+
+.service-card{
+
+  height: 350px;
+  width: 280px;
+  /* box-shadow: 0px 0px 20px purple; */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ padding: 25px;
+background-color: black;
+cursor: pointer;
+     border-radius: 15px;
+
+}
+.service-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 0px 30px red;
+}
+
+.service-card h3 {
+  color:aqua;
+  font-size: 20px;
+ margin-top: 15px;
+ margin-bottom: 10px;
+ 
+ text-shadow: 0 0 2px aqua;
+
+}
+
+.service-card p {
+  color:white;
+  font-size: 15px;
+  width: 100%;
+ 
+}
+
+.service-card #images{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.service-card img{
+margin: 0 30%;
+ height: 70px;
+
+}
+
+
+/* service css close */
+
+/* project css open */
+
+.project-head{
+  color: white;
+  width: 100%;
+  height: 150px;
+  text-transform: capitalize;
+  padding-left: 30%;
+  padding-top: 90px;
+}
+.project-head span{
+  color: aqua;
+}
+
+.project-container{
+  height: auto;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(1,1fr);
+  place-items: start;
+padding-left: 12%;
+
+}
+
+
+.project-card h2{
+padding-left: 20%;
+margin-top: 2%;
+margin-bottom: 2%;
+text-shadow: 0px 0px 2px white;
+color: white;
+font-size: 23px;
+}
+
+.project-card h5{
+  font-size: 13px;
+  color: white;
+}
+
+#project-head{
+  width: 100%;
+}
+
+.project-card #project-buttons{
+  width: 100%;
+margin-top: 15px;
+  /* border: 2px solid red; */
+padding: 0 5px;
+}
+
+
+
+/* project css close */
+
+
+/* contact section open  */
+.contact-heading{
+  color: white;
+  width: 100%;
+  height: 150px;
+  text-transform: capitalize;
+  padding-left: 30%;
+  padding-top: 90px;
+}
+.contact-heading span{
+  color: aqua;
+}
+.contact-me{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: start;
+padding:20% 5%;
+
+}
+.contact{
+  
+  height: auto;
+  width: 300px;
+  border: 3px solid aqua;
+
+  box-shadow: 0px 0px 30px aqua;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px 20px;
+  animation: fadeIn 3s ease-in-out;
+transition: transform 4s;
+&:hover{
+  transform: translateY(-25px) scale(1.05);
+}
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20%); /* Thoda upar se aaye */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+#contact-head h1{
+
+  color: aqua;
+  font-size: 20px;
+}
+#contact-head p{
+  color: white;
+  /* margin:15px 5px 15px 30px ; */
+ margin-top: 15px;
+ margin-bottom: 15px;
+ margin-left: 45px;
+ font-size: 16px;
+}
+.contact{
+  height: auto;
+}
+
+
+.contact-forms form button{
+  
+  margin: 5px 25%;
+
+}
+
+
+
+
+/* footer css open */
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  /* border: 2px solid red; */
+ display: block;
+ background: rgb(10, 10, 10);
+  
+}
+
+
+.footer-links{
+  display: flex;
+  justify-content: center;
+padding-top: 10px;
+  gap: 0.5rem;
+
+}  
+  .footer-links a {
+      font-size:12px;
+  }
+
+
+#copy-right{
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+    font-size:12px;
+}
+/* footer css close */
+
+
+
+/* tggle mode */
+
+#toggle-mode{
+  position: absolute;
+  bottom: 93.5%;left: 60%;
+  font-size: 15px;
+  z-index: 300;
+
+}
+
+
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <!-- External CSS File Ko Link Kiya Gaya Hai -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="max-media768px.css">
+    
+    <link rel="stylesheet" href="max-media480px.css">
+    <link rel="stylesheet" href="media1024.css">
+    <link rel="stylesheet" href="media380px.css">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  </head>
+  <body>
+    <!-- Navigation Bar open -->
+
+    <header>
+      <nav id="navigation-bar" class="navigation-bar">
+        <!-- Left Section: Logo & Name -->
+        <div id="header-left">
+          <!-- Logo Ka Span -->
+          <span id="h-logo">P</span>
+          <!-- Name Ka Span, Jisme First & Last Name Alag Alag Dikhaye Jayenge -->
+          <span id="h-name">
+            <span id="first-name">Prince</span>
+            <span id="last-name">Verma</span>
+          </span>
+        </div>
+        <!-- Left Section close -->
+
+    <!-- Mobile Menu Icon (Hamburger Icon) -->
+     <!--  -->
+    <span class="menu-icon"  id="menu-icon"> &#9776;</span>
+        <!-- Sidebar Menu (Initially Hidden) -->
+
+  <ul id="header-right" class="menu"  >   
+    <span class="close-btn" id="close-btn" onclick="onClose()">✖</span>
+   
+      <!-- Navigation Links open-->
+      <li class="header-links"><a href="#home" onclick="onClose()"> <i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="header-links"><a href="#about" onclick="onClose()"><i class="fa-solid fa-address-book"></i> About</a></li>
+      <li class="header-links"><a href="#education" onclick="onClose()"><i class="fa-solid fa-user-graduate"></i> Education</a></li>
+      <li class="header-links"><a href="#skill"  onclick="onClose()"> <i class="fa-solid fa-universal-access"></i>  Skill</a></li>
+      <li class="header-links"><a href="#services" onclick="onClose()"><i class="fa-solid fa-laptop"></i> Services</a></li>
+      <li class="header-links"><a href="#projects"  onclick="onClose()"> <i class="fa-solid fa-bag-shopping"></i> Project</a></li>
+      <li class="header-links"><a href="#contact"  onclick="onClose()"> <i class="fa-solid fa-address-card"></i> Contact</a></li>
+      
+      
+
+
+       <!-- Navigation Links close-->
+
+
+
+        <!-- toggle light mode to dark mode -->
+        <li id="toggle-mode">
+          <i class="bi bi-brightness-high-fill" ></i>
+          <i class="bi bi-moon"></i>
+         </li>
+          <!--toggle light mode to dark mode -->
+
+    
+    </ul>        
+        <!-- Sidebar Menu close -->
+
+
+
+      </nav>
+    
+
+    </header>
+
+    <!-- Navigation Bar close -->
+
+    <!-- main section open -->
+   <!-- main section start -->
+<!-- <main class="main"> -->
+  <!-- home section open -->
+<div class="home"  id="home">
+
+  <!-- part 1 -->
+  <div class="home-left">
+
+  <div id="text">
+    <h1 >hi it's me <span id="my-name">prince</span></h1>
+    
+    <h4 class="type">
+     And I'm a <span id="invisible"></span>
+    </h4>
+
+    <span id="details">As a front-end developer, I specialize in building interactive, user-centric websites and web applications. With a strong foundation in HTML, CSS, and JavaScript,  I create responsive and visually appealing designs that work seamlessly across all devices. I focus on writing clean, maintainable code while  prioritizing performance and accessibility.</span>
+  </div>
+
+<div id="icons">
+<a href="https://www.linkedin.com/in/prince-kumar-programmer" target="_blank"> <i class="fa-brands fa-linkedin" id="linked"></i></a>
+<a href="https://youtube.com/@prince_verma_2005?" target="_blank"> <i class="fa-brands fa-youtube" id="youtub"></i></a>
+<a href=" https://github.com/prince-repository" target="_blank"> <i class="fa-brands fa-github " id="git"></i></a>
+
+ 
+
+ 
+  <button type="button" id="cv" onclick="downloadResume()">download cv</button>
+</div>
+
+<!-- <span id="my-cv"><button type="button" id="cv">download cv</button>
+</span> -->
+
+
+</div>
+
+ <!-- part 2 -->
+<!-- image tag -->
+<div class="image">
+<img src="dp.jpeg" alt="" id="dp">
+ </div>
+
+</div>
+  <!-- home section close -->
+
+
+   <!-- about section start -->
+   <h1  class="about-head" id="about">About <span>me</span>  </h1>
+   <div class="about" >
+  
+    <div id="about-image">
+      <img src="dp.jpeg" alt="">
+    </div>
+
+    <div id="about-details">
+<p>
+  👋 Hi, I'm prince.
+I'm a passionate Frontend Developer with a strong foundation in HTML, CSS, JavaScript, React, and Tailwind CSS. I love crafting visually appealing, user-friendly, and responsive web applications.
+</p>
+<p>
+  With a background in B.C.A. from L.N.T. College, I have a solid understanding of core programming concepts, problem-solving, and databases. Besides frontend development, I also have experience in C++, Java, Python, MySQL, and Linux.
+</p>
+<!-- 
+<p>
+  I enjoy building interactive projects, solving complex challenges, and constantly improving my skills to stay up-to-date with modern web technologies. My goal is to create seamless web experiences that leave an impact!
+</p> -->
+<button id="read-more">more about me</button>
+    </div>
+   </div>
+   <!-- about section close -->
+
+
+<!-- education section open -->
+<h1  class="education-head" id="education">Education</h1>
+  <!-- Center Neon Line -->
+  <div class="education">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <div class="content">
+                <h3>2020</h3>
+                <h4><i class="fa-solid fa-school"></i>High School</h4>
+                <p>Completed high school with a strong foundation in science and mathematics.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="content">
+                <h3>2020-22</h3>
+                <h4><i class="fa-solid fa-building-columns"></i>college</h4>
+                <p>Studied Science (PCM), developing analytical thinking and problem-solving skills.</p>
+     
+
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="content">
+                <h3>2022-25</h3>
+                <h4><i class="fa-solid fa-graduation-cap"></i>university</h4>
+                <p>Pursuing a B.C.A. degree, focusing on web development, databases, and programming.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- </div>
+</div> -->
+ <!-- education section close -->
+
+<!-- skill sction open  -->
+
+
+
+ <!-- skill sction open  -->
+ <h1 id="skill">my  <span>skills</span></h1>
+ <div class="skills">
+   <div class="technical">
+     <div class="technical-head"><h1>technical</h1></div>
+
+     <div class="technical-skill">
+       <!-- html -->
+       <div class="progress-bars">
+         <h3><i class="fa-brands fa-html5" style="color: orange;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress html" data-percent="90">
+             <span id="html-per"></span>
+           </div>
+         </div>
+       </div>
+
+       <!-- CSS -->
+       <div class="progress-bars">
+         <h3><i class="fa-brands fa-css3-alt" style="color: blue;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress css" data-percent="50">
+             <span id="css-per"></span>
+           </div>
+         </div>
+       </div>
+
+       <!-- JavaScript -->
+       <div class="progress-bars">
+         <h3><i class="fa-brands fa-js" style="color: yellow;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress js" data-percent="65">
+             <span id="js-per"></span>
+           </div>
+         </div>
+       </div>
+
+       <!-- React -->
+       <div class="progress-bars">
+         <h3><i class="fa-brands fa-react" style="color: blue;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress react" data-percent="55">
+             <span id="react-per"></span>
+           </div>
+         </div>
+       </div>
+
+       <!-- Python -->
+       <div class="progress-bars">
+         <h3><i class="fa-brands fa-python" style="color: cyan;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress python" data-percent="25">
+             <span id="python-per"></span>
+           </div>
+         </div>
+       </div>
+
+       <!-- Database -->
+       <div class="progress-bars">
+         <h3><i class="fa-solid fa-database" style="color: blueviolet;"></i></h3>
+         <div class="progress-bar">
+           <div class="progress database" data-percent="80">
+             <span id="database-per"></span>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- professional -->
+   <div class="professional">
+     <div class="professional-head"><h1>professional</h1></div>
+
+     <!-- creativity -->
+     <div class="professional-skill">
+
+      <div class="progress-circle" data-percent="90">
+        <svg height="140px" width="140px">
+          <circle class="circle-background"></circle>
+          <circle  class="circle-progress" ></circle>
+        </svg>
+        <span class="percentage"></span>
+        <span class="skill-name">creativity</span>
+      </div>
+    
+
+      <div class="progress-circle" data-percent="60">
+        <svg height="140px" width="140px">
+          <circle class="circle-background"></circle>
+          <circle  class="circle-progress"  ></circle>
+        </svg>
+        <span class="percentage"></span>
+        <span class="skill-name">communication</span>
+     </div>
+
+
+     <div class="progress-circle" data-percent="45">
+      <svg height="140px" width="140px">
+        <circle class="circle-background"  ></circle>
+        <circle  class="circle-progress"   ></circle>
+      </svg>
+      <span class="percentage"></span>
+      <span class="skill-name">problem solving</span>
+   </div>
+
+
+   <div class="progress-circle" data-percent="78">
+    <svg height="140px" width="140px">
+      <circle class="circle-background" ></circle>
+      <circle  class="circle-progress"  ></circle>
+    </svg>
+    <span class="percentage"></span>
+    <span class="skill-name">teamwork</span>
+ </div>
+
+
+    </div>
+    
+   </div>
+
+
+ </div>
+
+<!-- skill sction close  -->
+
+<!-- service section open -->
+
+<h1 id="services" class="service-head">my <span>services</span></h1>
+  <div class="services">
+
+    <div class="service-card">
+     
+     <div id="images"> <img src="web-development.png" alt="web Development" id="img1"> </div>
+      <h3>Web Development</h3>
+      <p>Creating modern, responsive, and interactive websites using HTML, CSS, and JavaScript. I focus on building user-friendly and visually appealing designs while ensuring optimal performance and accessibility.</p>
+    
+    </div>
+
+    <div class="service-card">
+      <div id="images"> <img src="react.png" alt="React Development" id="img2"> </div>
+      <h3>React Development</h3>
+      <p>Building fast, scalable, and dynamic web applications using React.js. I specialize in creating reusable components, managing state efficiently, and integrating APIs to deliver seamless user experiences.</p>
+    </div>
+
+    <div class="service-card">
+      <div id="images">   <img src="database.png" alt="Database Management" id="img3"> </div>
+      <h3>Database Management</h3>
+      <p>Designing and managing databases efficiently using MySQL and MongoDB. I ensure secure, optimized, and well-structured databases to handle large datasets and support high-performance applications.</p>
+    </div>
+
+    <div class="service-card">
+      <div id="images">  <img src="python.png" alt="Python Development" id="img4"></div>
+      <h3>Python Development</h3>
+      <p>Building automation scripts and backend solutions using Python. From web scraping and data analysis to API development and task automation, I leverage Python’s power to create efficient and scalable solutions.</p>
+    </div>
+
+  </div>
+
+<!-- service section close -->
+
+
+
+<!-- project section open -->
+ <h1 id="projects" class="project-head">my <span>projects</span></h1>
+
+  <div class="project-container">
+
+
+ </div>
+ <!-- project section close -->
+
+
+<!-- contact setion open -->
+
+<h1 id="contact" class="contact-heading">contact <span>me</span></h1>
+<div class="contact-me">
+
+  <div  class="contact">
+    <div id="contact-head">
+      <h1>get in touch</h1>
+      <p>Feel free to reach out for collaborations or just a chat!</p>
+    </div>
+  
+   <div class="contact-forms">
+    <form action="" method="post" id="contact-form">
+      <input type="text" id="contact-name" placeholder="Your Name" autocomplete="off">
+      <span class="error" id="name-error"></span>
+
+      <input type="text" id="email" placeholder="Your Email" autocomplete="off">
+      <span class="error" id="email-error"></span>
+
+      <textarea id="message" placeholder="Your Message" autocomplete="off"></textarea>
+      <span class="error" id="message-error"></span>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  
+    
+  
+  </div>
+  
+  
+</div>
+
+
+
+ <!-- contact section close -->
+
+<!-- </main> -->
+    <!-- main section close -->
+
+
+    <!-- footer section open -->
+   <div class="footer">
+      
+  <div class="footer-links">
+    <a href="#">FAQ</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#education">education</a>
+    <a href="#skill">skill</a>
+    <a href="#services">service</a>
+    <a href="#projects">project</a>
+  </div>
+
+  <div id="copy-right">
+    <p><span>&copy;</span> 2025 Prince verma | All Rights Reserved.</p>
+  </div>
+   </div>
+   <!-- footer section close -->
+
+    <!-- JavaScript Code -->
+    <script src="script.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/ba2faaa4dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
